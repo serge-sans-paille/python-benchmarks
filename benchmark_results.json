@@ -1,0 +1,487 @@
+{
+  "benchmark_results": [
+    {
+      "group_name": "arc_distance", 
+      "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/arc_distance", 
+      "records": [
+        {
+          "name": "arc_distance_pythran_nested_for_loops", 
+          "cold_time": null, 
+          "warm_time": 0.003802061080932617, 
+          "all_warm_times": [
+            0.003844022750854492, 
+            0.0038099288940429688, 
+            0.0038039684295654297, 
+            0.003802061080932617, 
+            0.0038878917694091797
+          ], 
+          "std_warm_times": 3.2888492727267476e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/arc_distance/arc_distance_pythran.py", 
+          "rank": 1, 
+          "speedup": 12.801216529754813
+        }, 
+        {
+          "name": "arc_distance_numpy", 
+          "cold_time": null, 
+          "warm_time": 0.005759000778198242, 
+          "all_warm_times": [
+            0.0059130191802978516, 
+            0.005851030349731445, 
+            0.0058710575103759766, 
+            0.0057909488677978516, 
+            0.005759000778198242
+          ], 
+          "std_warm_times": 5.5390008550032965e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/arc_distance/arc_distance_python.py", 
+          "rank": 2, 
+          "speedup": 8.451293728006624
+        }, 
+        {
+          "name": "arc_distance_numba_for_loops", 
+          "cold_time": 0.4746840000152588, 
+          "warm_time": 0.016484975814819336, 
+          "all_warm_times": [
+            0.016516923904418945, 
+            0.016484975814819336, 
+            0.01669001579284668, 
+            0.016510009765625, 
+            0.016519784927368164
+          ], 
+          "std_warm_times": 7.3862983914747005e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/arc_distance/arc_distance_numba.py", 
+          "rank": 3, 
+          "speedup": 2.952446379243018
+        }, 
+        {
+          "name": "arc_distance_python_nested_for_loops", 
+          "cold_time": null, 
+          "warm_time": 0.04867100715637207, 
+          "all_warm_times": [
+            0.04867887496948242, 
+            0.04935789108276367, 
+            0.049278974533081055, 
+            0.04867100715637207, 
+            0.04880404472351074
+          ], 
+          "std_warm_times": 0.00029897000032586853, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/arc_distance/arc_distance_python.py", 
+          "rank": 4, 
+          "speedup": 1.0
+        }
+      ], 
+      "runtime_errors": [], 
+      "import_errors": []
+    }, 
+    {
+      "group_name": "growcut", 
+      "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/growcut", 
+      "records": [
+        {
+          "name": "growcut_pythran", 
+          "cold_time": null, 
+          "warm_time": 0.006617069244384766, 
+          "all_warm_times": [
+            0.006680965423583984, 
+            0.00669407844543457, 
+            0.006698131561279297, 
+            0.006617069244384766, 
+            0.006657123565673828
+          ], 
+          "std_warm_times": 2.9857926947878381e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/growcut/growcut_pythran.py", 
+          "rank": 1, 
+          "speedup": 1083.566116595806
+        }, 
+        {
+          "name": "growcut_cython", 
+          "cold_time": null, 
+          "warm_time": 0.008432865142822266, 
+          "all_warm_times": [
+            0.008487939834594727, 
+            0.00846099853515625, 
+            0.008455991744995117, 
+            0.008432865142822266, 
+            0.008457183837890625
+          ], 
+          "std_warm_times": 1.7532181178754905e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/growcut/growcut_cython.pyx", 
+          "rank": 2, 
+          "speedup": 850.2486287814532
+        }, 
+        {
+          "name": "growcut_numba", 
+          "cold_time": 0.5078320503234863, 
+          "warm_time": 0.032330989837646484, 
+          "all_warm_times": [
+            0.032533884048461914, 
+            0.034147024154663086, 
+            0.032330989837646484, 
+            0.032768964767456055, 
+            0.03229784965515137
+          ], 
+          "std_warm_times": 0.00068660633982102373, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/growcut/growcut_numba.py", 
+          "rank": 3, 
+          "speedup": 221.76964146129228
+        }, 
+        {
+          "name": "growcut_python", 
+          "cold_time": null, 
+          "warm_time": 7.170032024383545, 
+          "all_warm_times": [
+            7.170032024383545
+          ], 
+          "std_warm_times": 0.0, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/growcut/growcut_python.py", 
+          "rank": 4, 
+          "speedup": 1.0
+        }
+      ], 
+      "runtime_errors": [
+        {
+          "name": "growcut_parakeet", 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/growcut/growcut_parakeet.py", 
+          "error_type": "NameNotFound", 
+          "error_message": "d", 
+          "traceback": "Traceback (most recent call last):\n  File \"run_benchmarks.py\", line 184, in run_benchmarks\n    record = run_benchmark(name, func, args, kwargs, memory=memory)\n  File \"run_benchmarks.py\", line 130, in run_benchmark\n    first_timing = time_once()\n  File \"run_benchmarks.py\", line 126, in time_once\n    func(*args, **kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/decorators.py\", line 115, in __call__\n    return run_function.run(self.f, *args, **kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/run_function.py\", line 134, in run\n    untyped, _, compiled, all_args = specialize_and_compile(fn, args, kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/run_function.py\", line 116, in specialize_and_compile\n    untyped, arg_values, arg_types = prepare_args(fn, args, kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/run_function.py\", line 98, in prepare_args\n    untyped = ast_conversion.translate_function_value(fn)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 893, in translate_function_value\n    filename = filename)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 840, in translate_function_source\n    filename = filename)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 784, in translate_function_ast\n    _, body = translator.visit_block(body)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 746, in visit_block\n    parakeet_stmt = self.visit(stmt)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 487, in visit\n    res = ast.NodeVisitor.visit(self, node)\n  File \"/usr/lib/python2.7/ast.py\", line 241, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 726, in visit_For\n    body, merge, _ = self.visit_loop_body(stmt.body)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 703, in visit_loop_body\n    scope_after, body = self.visit_block(body)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 746, in visit_block\n    parakeet_stmt = self.visit(stmt)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 487, in visit\n    res = ast.NodeVisitor.visit(self, node)\n  File \"/usr/lib/python2.7/ast.py\", line 241, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 726, in visit_For\n    body, merge, _ = self.visit_loop_body(stmt.body)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 703, in visit_loop_body\n    scope_after, body = self.visit_block(body)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 746, in visit_block\n    parakeet_stmt = self.visit(stmt)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 487, in visit\n    res = ast.NodeVisitor.visit(self, node)\n  File \"/usr/lib/python2.7/ast.py\", line 241, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 726, in visit_For\n    body, merge, _ = self.visit_loop_body(stmt.body)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 703, in visit_loop_body\n    scope_after, body = self.visit_block(body)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 746, in visit_block\n    parakeet_stmt = self.visit(stmt)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 487, in visit\n    res = ast.NodeVisitor.visit(self, node)\n  File \"/usr/lib/python2.7/ast.py\", line 241, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 726, in visit_For\n    body, merge, _ = self.visit_loop_body(stmt.body)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 703, in visit_loop_body\n    scope_after, body = self.visit_block(body)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 746, in visit_block\n    parakeet_stmt = self.visit(stmt)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 487, in visit\n    res = ast.NodeVisitor.visit(self, node)\n  File \"/usr/lib/python2.7/ast.py\", line 241, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 695, in visit_If\n    merge = self.create_phi_nodes(true_scope, false_scope)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 362, in create_phi_nodes\n    right = self.lookup(name)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 281, in lookup\n    raise NameNotFound(name)\nNameNotFound: d\n"
+        }
+      ], 
+      "import_errors": []
+    }, 
+    {
+      "group_name": "julia", 
+      "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/julia", 
+      "records": [
+        {
+          "name": "julia_pythran_for_loops", 
+          "cold_time": null, 
+          "warm_time": 0.0007910728454589844, 
+          "all_warm_times": [
+            0.0009598731994628906, 
+            0.0007910728454589844, 
+            0.00080108642578125, 
+            0.0008199214935302734, 
+            0.0007929801940917969
+          ], 
+          "std_warm_times": 6.4258544301370543e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/julia/julia_pythran.py", 
+          "rank": 1, 
+          "speedup": 3706.8887884267633
+        }, 
+        {
+          "name": "julia_cython_for_loops", 
+          "cold_time": null, 
+          "warm_time": 0.0037050247192382812, 
+          "all_warm_times": [
+            0.003763914108276367, 
+            0.003735065460205078, 
+            0.003709077835083008, 
+            0.0037050247192382812, 
+            0.0037851333618164062
+          ], 
+          "std_warm_times": 3.1022792443550052e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/julia/julia_cython.pyx", 
+          "rank": 2, 
+          "speedup": 791.4708494208494
+        }, 
+        {
+          "name": "julia_python_numpy", 
+          "cold_time": null, 
+          "warm_time": 0.26404809951782227, 
+          "all_warm_times": [
+            0.2659420967102051, 
+            0.2651650905609131, 
+            0.26404809951782227, 
+            0.26424598693847656, 
+            0.26678895950317383
+          ], 
+          "std_warm_times": 0.0010301938074901631, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/julia/julia_python.py", 
+          "rank": 3, 
+          "speedup": 11.10562456997665
+        }, 
+        {
+          "name": "julia_python_for_loops", 
+          "cold_time": null, 
+          "warm_time": 2.9324190616607666, 
+          "all_warm_times": [
+            2.9324190616607666
+          ], 
+          "std_warm_times": 0.0, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/julia/julia_python.py", 
+          "rank": 4, 
+          "speedup": 1.0
+        }
+      ], 
+      "runtime_errors": [
+        {
+          "name": "julia_numba_for_loops", 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/julia/julia_numba.py", 
+          "error_type": "NumbaError", 
+          "error_message": "(see below)\n--------------------- Numba Encountered Errors or Warnings ---------------------\n    for i, x in enumerate(grid_x):\n--------^\nError 23:8: Only a single target iteration variable is supported at the moment\n--------------------------------------------------------------------------------", 
+          "traceback": "Traceback (most recent call last):\n  File \"run_benchmarks.py\", line 184, in run_benchmarks\n    record = run_benchmark(name, func, args, kwargs, memory=memory)\n  File \"run_benchmarks.py\", line 130, in run_benchmark\n    first_timing = time_once()\n  File \"run_benchmarks.py\", line 126, in time_once\n    func(*args, **kwargs)\n  File \"numbawrapper.pyx\", line 189, in numba.numbawrapper._NumbaSpecializingWrapper.__call__ (numba/numbawrapper.c:3726)\n  File \"/usr/local/lib/python2.7/dist-packages/numba/wrapping/compiler.py\", line 68, in compile_from_args\n    return self.compile(signature)\n  File \"/usr/local/lib/python2.7/dist-packages/numba/wrapping/compiler.py\", line 83, in compile\n    compiled_function = dec(self.py_func)\n  File \"/usr/local/lib/python2.7/dist-packages/numba/decorators.py\", line 222, in _jit_decorator\n    env, func, argtys, restype=return_type, nopython=nopython, **kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/numba/decorators.py\", line 133, in compile_function\n    func_env = pipeline.compile2(env, func, restype, argtypes, **kwds)\n  File \"/usr/local/lib/python2.7/dist-packages/numba/pipeline.py\", line 137, in compile2\n    post_ast = pipeline(func_ast, env)\n  File \"/usr/local/lib/python2.7/dist-packages/numba/pipeline.py\", line 184, in __call__\n    ast = self.transform(ast, env)\n  File \"/usr/local/lib/python2.7/dist-packages/numba/pipeline.py\", line 621, in transform\n    ast = stage(ast, env)\n  File \"/usr/local/lib/python2.7/dist-packages/numba/pipeline.py\", line 606, in _stage\n    return _check_stage_object(stage_obj)(ast, env)\n  File \"/usr/local/lib/python2.7/dist-packages/numba/pipeline.py\", line 195, in __call__\n    reporting.report(env, exc=e)\n  File \"/usr/local/lib/python2.7/dist-packages/numba/reporting.py\", line 181, in report\n    raise exc\nNumbaError: (see below)\n--------------------- Numba Encountered Errors or Warnings ---------------------\n    for i, x in enumerate(grid_x):\n--------^\nError 23:8: Only a single target iteration variable is supported at the moment\n--------------------------------------------------------------------------------\n"
+        }, 
+        {
+          "name": "julia_parakeet_for_loops", 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/julia/julia_parakeet.py", 
+          "error_type": "AssertionError", 
+          "error_message": "Unsupported primitive: <type 'numpy.uint32'>", 
+          "traceback": "Traceback (most recent call last):\n  File \"run_benchmarks.py\", line 184, in run_benchmarks\n    record = run_benchmark(name, func, args, kwargs, memory=memory)\n  File \"run_benchmarks.py\", line 130, in run_benchmark\n    first_timing = time_once()\n  File \"run_benchmarks.py\", line 126, in time_once\n    func(*args, **kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/decorators.py\", line 115, in __call__\n    return run_function.run(self.f, *args, **kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/run_function.py\", line 134, in run\n    untyped, _, compiled, all_args = specialize_and_compile(fn, args, kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/run_function.py\", line 116, in specialize_and_compile\n    untyped, arg_values, arg_types = prepare_args(fn, args, kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/run_function.py\", line 98, in prepare_args\n    untyped = ast_conversion.translate_function_value(fn)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 893, in translate_function_value\n    filename = filename)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 840, in translate_function_source\n    filename = filename)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 784, in translate_function_ast\n    _, body = translator.visit_block(body)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 746, in visit_block\n    parakeet_stmt = self.visit(stmt)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 487, in visit\n    res = ast.NodeVisitor.visit(self, node)\n  File \"/usr/lib/python2.7/ast.py\", line 241, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 677, in visit_Assign\n    ssa_rhs = self.visit(stmt.value)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 487, in visit\n    res = ast.NodeVisitor.visit(self, node)\n  File \"/usr/lib/python2.7/ast.py\", line 241, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 517, in visit_Call\n    keywords_dict[kwd.arg] = self.visit(kwd.value)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 487, in visit\n    res = ast.NodeVisitor.visit(self, node)\n  File \"/usr/lib/python2.7/ast.py\", line 241, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 631, in visit_Attribute\n    return value_to_syntax(value)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 135, in value_to_syntax\n    return translate_function_value(v)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 855, in translate_function_value\n    \"Unsupported primitive: %s\" % (fn,)\nAssertionError: Unsupported primitive: <type 'numpy.uint32'>\n"
+        }, 
+        {
+          "name": "julia_parakeet_numpy", 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/julia/julia_parakeet.py", 
+          "error_type": "AssertionError", 
+          "error_message": "Unsupported primitive: <built-in function geterrobj>", 
+          "traceback": "Traceback (most recent call last):\n  File \"run_benchmarks.py\", line 184, in run_benchmarks\n    record = run_benchmark(name, func, args, kwargs, memory=memory)\n  File \"run_benchmarks.py\", line 130, in run_benchmark\n    first_timing = time_once()\n  File \"run_benchmarks.py\", line 126, in time_once\n    func(*args, **kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/decorators.py\", line 115, in __call__\n    return run_function.run(self.f, *args, **kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/run_function.py\", line 134, in run\n    untyped, _, compiled, all_args = specialize_and_compile(fn, args, kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/run_function.py\", line 116, in specialize_and_compile\n    untyped, arg_values, arg_types = prepare_args(fn, args, kwargs)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/run_function.py\", line 98, in prepare_args\n    untyped = ast_conversion.translate_function_value(fn)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 893, in translate_function_value\n    filename = filename)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 840, in translate_function_source\n    filename = filename)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 784, in translate_function_ast\n    _, body = translator.visit_block(body)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 746, in visit_block\n    parakeet_stmt = self.visit(stmt)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 487, in visit\n    res = ast.NodeVisitor.visit(self, node)\n  File \"/usr/lib/python2.7/ast.py\", line 241, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 677, in visit_Assign\n    ssa_rhs = self.visit(stmt.value)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 487, in visit\n    res = ast.NodeVisitor.visit(self, node)\n  File \"/usr/lib/python2.7/ast.py\", line 241, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 553, in visit_Call\n    positional, keywords_dict, starargs_expr)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 497, in translate_value_call\n    return syntax.Call(translate_function_value(value),\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 893, in translate_function_value\n    filename = filename)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 840, in translate_function_source\n    filename = filename)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 784, in translate_function_ast\n    _, body = translator.visit_block(body)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 746, in visit_block\n    parakeet_stmt = self.visit(stmt)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 487, in visit\n    res = ast.NodeVisitor.visit(self, node)\n  File \"/usr/lib/python2.7/ast.py\", line 241, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 677, in visit_Assign\n    ssa_rhs = self.visit(stmt.value)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 487, in visit\n    res = ast.NodeVisitor.visit(self, node)\n  File \"/usr/lib/python2.7/ast.py\", line 241, in visit\n    return visitor(node)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 553, in visit_Call\n    positional, keywords_dict, starargs_expr)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 500, in translate_value_call\n    return self.translate_builtin_call(value, positional, keywords_dict)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 482, in translate_builtin_call\n    fn = value_to_syntax(value)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 135, in value_to_syntax\n    return translate_function_value(v)\n  File \"/usr/local/lib/python2.7/dist-packages/parakeet-0.12.1-py2.7.egg/parakeet/ast_conversion.py\", line 855, in translate_function_value\n    \"Unsupported primitive: %s\" % (fn,)\nAssertionError: Unsupported primitive: <built-in function geterrobj>\n"
+        }
+      ], 
+      "import_errors": []
+    }, 
+    {
+      "group_name": "pairwise", 
+      "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/pairwise", 
+      "records": [
+        {
+          "name": "pairwise_pythran_nested_for_loops", 
+          "cold_time": null, 
+          "warm_time": 0.0040531158447265625, 
+          "all_warm_times": [
+            0.00409698486328125, 
+            0.0040531158447265625, 
+            0.004073143005371094, 
+            0.004079103469848633, 
+            0.004053831100463867
+          ], 
+          "std_warm_times": 1.6491259903283613e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/pairwise/pairwise_pythran.py", 
+          "rank": 1, 
+          "speedup": 3817.0695294117645
+        }, 
+        {
+          "name": "pairwise_numba_nested_for_loops", 
+          "cold_time": 0.1707930564880371, 
+          "warm_time": 0.012951850891113281, 
+          "all_warm_times": [
+            0.012986898422241211, 
+            0.012951850891113281, 
+            0.013020992279052734, 
+            0.013156890869140625, 
+            0.01294708251953125
+          ], 
+          "std_warm_times": 7.6855381857436332e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/pairwise/pairwise_numba.py", 
+          "rank": 2, 
+          "speedup": 1194.503018923496
+        }, 
+        {
+          "name": "pairwise_theano_blas_float32", 
+          "cold_time": null, 
+          "warm_time": 0.013105154037475586, 
+          "all_warm_times": [
+            0.013278007507324219, 
+            0.013180971145629883, 
+            0.013105154037475586, 
+            0.01317906379699707, 
+            0.013134002685546875
+          ], 
+          "std_warm_times": 5.8687284129174557e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/pairwise/pairwise_theano.py", 
+          "rank": 3, 
+          "speedup": 1180.5298087943675
+        }, 
+        {
+          "name": "pairwise_cython_for_loops", 
+          "cold_time": null, 
+          "warm_time": 0.013181924819946289, 
+          "all_warm_times": [
+            0.013437986373901367, 
+            0.013305187225341797, 
+            0.013255834579467773, 
+            0.013181924819946289, 
+            0.013214111328125
+          ], 
+          "std_warm_times": 8.9591522470634875e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/pairwise/pairwise_cython.pyx", 
+          "rank": 4, 
+          "speedup": 1173.654470147769
+        }, 
+        {
+          "name": "pairwise_theano_blas_float64", 
+          "cold_time": null, 
+          "warm_time": 0.013361930847167969, 
+          "all_warm_times": [
+            0.013545989990234375, 
+            0.013602972030639648, 
+            0.013361930847167969, 
+            0.013376951217651367, 
+            0.013371944427490234
+          ], 
+          "std_warm_times": 0.00010176475821043428, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/pairwise/pairwise_theano.py", 
+          "rank": 5, 
+          "speedup": 1157.8435158090072
+        }, 
+        {
+          "name": "pairwise_parakeet_inner_broadcasting", 
+          "cold_time": 0.10413002967834473, 
+          "warm_time": 0.013743162155151367, 
+          "all_warm_times": [
+            0.013813972473144531, 
+            0.013830900192260742, 
+            0.013747930526733398, 
+            0.013743162155151367, 
+            0.013782024383544922
+          ], 
+          "std_warm_times": 3.4841953096976966e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/pairwise/pairwise_parakeet.py", 
+          "rank": 6, 
+          "speedup": 1125.7252745346357
+        }, 
+        {
+          "name": "pairwise_parakeet_nested_for_loops", 
+          "cold_time": 0.08600902557373047, 
+          "warm_time": 0.014089822769165039, 
+          "all_warm_times": [
+            0.014206886291503906, 
+            0.014089822769165039, 
+            0.014096975326538086, 
+            0.014173030853271484, 
+            0.014147043228149414
+          ], 
+          "std_warm_times": 4.4599188895594707e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/pairwise/pairwise_parakeet.py", 
+          "rank": 7, 
+          "speedup": 1098.0283601536457
+        }, 
+        {
+          "name": "pairwise_theano_tensor_float32", 
+          "cold_time": null, 
+          "warm_time": 0.03906607627868652, 
+          "all_warm_times": [
+            0.039980173110961914, 
+            0.039456844329833984, 
+            0.03906607627868652, 
+            0.03914308547973633, 
+            0.039505958557128906
+          ], 
+          "std_warm_times": 0.00032370983159094605, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/pairwise/pairwise_theano.py", 
+          "rank": 8, 
+          "speedup": 396.0219828506912
+        }, 
+        {
+          "name": "pairwise_theano_tensor_float64", 
+          "cold_time": null, 
+          "warm_time": 0.05463886260986328, 
+          "all_warm_times": [
+            0.05506610870361328, 
+            0.05542397499084473, 
+            0.054962873458862305, 
+            0.054724931716918945, 
+            0.05463886260986328
+          ], 
+          "std_warm_times": 0.00027744199556486087, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/pairwise/pairwise_theano.py", 
+          "rank": 9, 
+          "speedup": 283.15056813223254
+        }, 
+        {
+          "name": "pairwise_python_inner_broadcasting", 
+          "cold_time": null, 
+          "warm_time": 1.4691479206085205, 
+          "all_warm_times": [
+            1.4691479206085205
+          ], 
+          "std_warm_times": 0.0, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/pairwise/pairwise_python.py", 
+          "rank": 10, 
+          "speedup": 10.530610820776777
+        }, 
+        {
+          "name": "pairwise_python_nested_for_loops", 
+          "cold_time": null, 
+          "warm_time": 15.471024990081787, 
+          "all_warm_times": [
+            15.471024990081787
+          ], 
+          "std_warm_times": 0.0, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/pairwise/pairwise_python.py", 
+          "rank": 11, 
+          "speedup": 1.0
+        }
+      ], 
+      "runtime_errors": [], 
+      "import_errors": []
+    }, 
+    {
+      "group_name": "rosen_der", 
+      "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/rosen_der", 
+      "records": [
+        {
+          "name": "rosen_der_cython", 
+          "cold_time": null, 
+          "warm_time": 0.003013134002685547, 
+          "all_warm_times": [
+            0.0052700042724609375, 
+            0.004266023635864258, 
+            0.003013134002685547, 
+            0.0030219554901123047, 
+            0.0030260086059570312
+          ], 
+          "std_warm_times": 0.00091314874303718291, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/rosen_der/rosen_der_cython.pyx", 
+          "rank": 1, 
+          "speedup": 2160.391438518753
+        }, 
+        {
+          "name": "rosen_der_pythran", 
+          "cold_time": null, 
+          "warm_time": 0.005079030990600586, 
+          "all_warm_times": [
+            0.005141019821166992, 
+            0.005079030990600586, 
+            0.00522303581237793, 
+            0.0051419734954833984, 
+            0.005103111267089844
+          ], 
+          "std_warm_times": 4.888741425219704e-05, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/rosen_der/rosen_der_pythran.py", 
+          "rank": 2, 
+          "speedup": 1281.6517391916632
+        }, 
+        {
+          "name": "rosen_der_numpy", 
+          "cold_time": null, 
+          "warm_time": 0.02327108383178711, 
+          "all_warm_times": [
+            0.02327108383178711, 
+            0.02432394027709961, 
+            0.024389982223510742, 
+            0.02429509162902832, 
+            0.02419900894165039
+          ], 
+          "std_warm_times": 0.00041692137424897404, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/rosen_der/rosen_der_python.py", 
+          "rank": 3, 
+          "speedup": 279.7269327705264
+        }, 
+        {
+          "name": "rosen_der_python", 
+          "cold_time": null, 
+          "warm_time": 6.509548902511597, 
+          "all_warm_times": [
+            6.509548902511597
+          ], 
+          "std_warm_times": 0.0, 
+          "source_url": "https://github.com/numfocus/python-benchmarks/tree/master/rosen_der/rosen_der_python.py", 
+          "rank": 4, 
+          "speedup": 1.0
+        }
+      ], 
+      "runtime_errors": [], 
+      "import_errors": []
+    }
+  ], 
+  "benchmark_environment": {}
+}

@@ -15,6 +15,15 @@
     color: gray;
 }
 
+.plot {
+    text-align: center;
+}
+
+.plot img {
+    margin: 0, 1%;
+    max-width: 48%;
+}
+
 h1:hover > a.headerlink,
 h2:hover > a.headerlink,
 h3:hover > a.headerlink,
@@ -23,4 +32,29 @@ h5:hover > a.headerlink,
 h6:hover > a.headerlink
  {
     visibility: visible;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 15px 0 10px 0;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: .5em;
+    border-top: 1px dashed gray;
+}
+
+h2:first-child {
+    margin-top: inherit;
+    border-top: none;
+}
+
+p.errors-summary {
+    font-color: gray;
+    font-size: 90%;
+    font-style: italic;;
+}
+
+p.errors-summary a {
+    font-weight: bold;
 }
